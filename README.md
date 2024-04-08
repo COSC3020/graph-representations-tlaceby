@@ -16,6 +16,12 @@ depend on the number of vertices, the number of edges, or both?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
+**Solution**
+
+Since the adjacency matrix must be square, and we must iterate over each row and column therefore the runtime complexity for converting between an adjacency matrix to an adjacency list is $\Theta(V^2)$ where $V$ is the number of vertices in the graph.
+
+This algorithm is reliant on the number of veritices in the graph. The number of edges will not matter nor will how sparse the graph is. Even if no edges exist, there will still be a runtime complexity of $\Theta(V^2)$.
+
 ## Bonus
 
 Implement a function to convert an adjacency list to an adjacency matrix and
